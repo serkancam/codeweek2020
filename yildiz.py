@@ -1,3 +1,6 @@
+
+
+
 # -*- coding: utf-8 -*-
 import turtle
 import urllib.request
@@ -35,21 +38,28 @@ turtle.color("red","red")
 turtle.begin_fill()
 turtle.circle(25)
 turtle.end_fill()
+
+
+#yıldız
+#yildiz
 turtle.penup()
-turtle.goto(-220,145)
+turtle.goto(-200,155)
 turtle.pendown()
 turtle.color("white","white")
+turtle.color("white")
 turtle.begin_fill()
-#yıldız
-for i in range(5):
-	turtle.forward(30)
-	turtle.right(-144)
+for _ in range(5):
+    turtle.forward(10)
+    turtle.right(120)
+    turtle.forward(10)
+    turtle.left(48)
 turtle.end_fill()
-
+#yıldız bitiş
+#istiklal marşı yazılıyor
 turtle.penup()
 turtle.color("red","red")
 turtle.goto(200,250)
-#istiklal marşı yazılıyor
+
 x,y=turtle.position()
 for misra in mars:
 	turtle.write(misra.decode("utf-8"),align="center",font=("Arial",14,"italic"))
